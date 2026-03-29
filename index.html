@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sree Dhruthi Mulakaledu | Portfolio</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Target Top Navbar -->
+    <nav class="navbar" id="main-nav">
+        <!-- The brand section holding the slot and the name -->
+        <div class="nav-brand" style="display: flex; align-items: center; gap: 15px;">
+            <!-- The invisible target slot for the shrinking logo animation -->
+            <div id="logo-slot" class="nav-logo-slot">
+                <!-- Native persistent avatar for when scrolling goes deep into projects -->
+                <img id="nav-avatar-img" src="assets/profile.png" alt="Sree" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: center 15%; opacity: 0;">
+            </div>
+            <!-- The name that fades in together with the navbar -->
+            <span class="nav-name" style="font-weight: 700; font-size: 1.2rem; color: #fff; letter-spacing: -0.5px; opacity: 0;">Sree Dhruthi.</span>
+        </div>
+        
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- ACT 1: ASTEROID GRAVITY + TITLE (0vh to 100vh) -->
+    <section id="act-1-asteroids" class="hero-full">
+        <!-- The gravity particles canvas strictly confined to this act -->
+        <canvas id="particles-canvas"></canvas>
+
+        <div class="hero-content act-1-text">
+            <h1 class="target-gradient-text animate-slide-up">Data Scientist<br>& ML Engineer</h1>
+            <p class="hero-subtext animate-slide-up delay-1" style="color: #fff; margin-top: 1.5rem;">
+                Passionate about Machine Learning, Data Engineering, and AI systems.
+            </p>
+        </div>
+        
+        <!-- Subtle absolute positioned scroll indicator -->
+        <div class="scroll-indicator animate-slide-up-centered">
+            <span>Scroll Down</span>
+            <div class="mouse-icon"></div>
+        </div>
+    </section>
+
+    <!-- ACT 2 & 3: PHOTO LOCK, SHRINK, AND FLY (100vh to 250vh) -->
+    <div id="scroll-sequence" class="scroll-runway">
+        <div class="sticky-photo-container">
+            <div id="avatar-container" class="avatar-container">
+                <img id="floating-avatar" src="assets/profile.png" alt="Sree Dhruthi Avatar">
+            </div>
+            
+            <h2 id="photo-greeting" class="photo-greeting-text">Hi, I'm Sree Dhruthi.</h2>
+        </div>
+    </div>
+
+    <!-- MAIN PORTFOLIO (Alpha Mocha content, fades in starting at 250vh) -->
+    <main id="main-portfolio" class="main-container portfolio-content-wrapper">
+        
+        <!-- Experience & Skills -->
+        <section id="about" class="section fade-up">
+            <h3 class="section-title">About & Experience</h3>
+            <div class="text-block">
+                <p>
+                    I am a Data Science undergraduate currently pursuing my B.Tech in CSE (Data Science) at Jain University. My expertise lies in building automated ETL pipelines, developing accurate ML models, and working with modern Gen AI and RAG applications.
+                </p>
+            </div>
+            
+            <div class="experience-list">
+                <div class="exp-card">
+                    <h4>Quality Analyst</h4>
+                    <span class="company">Aquera Lab Pvt Ltd</span>
+                    <span class="date">Nov 2025 - Present</span>
+                    <p>Built and automated ETL data validation pipelines using Python and SQL, improving data quality and reducing preprocessing time.</p>
+                </div>
+                <div class="exp-card">
+                    <h4>Data Science Intern</h4>
+                    <span class="company">Shamgar Software Solutions</span>
+                    <span class="date">Feb 2025 - Apr 2025</span>
+                    <p>Automated ETL pipelines and performed statistical analysis for forecasting. Built dashboards improving reporting efficiency.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid Matching the Alpha Mocha Screenshot -->
+        <section id="projects" class="section fade-up">
+            <h2 class="section-title target-gradient-text-purple text-center">My Projects</h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3>Health Risk Predictor App</h3>
+                    <p>Streamlit + Scikit-learn based ML app for health risk classification with preprocessing, feature engineering, and data visualization.</p>
+                    <div class="pills">
+                        <span class="pill">Python</span>
+                        <span class="pill">Streamlit</span>
+                        <span class="pill">Scikit-learn</span>
+                        <span class="pill">Pandas</span>
+                        <span class="pill">NumPy</span>
+                        <span class="pill">Matplotlib</span>
+                        <span class="pill">Seaborn</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/sreedhruthism/Risk_Predictor" target="_blank" class="btn-github">GitHub</a>
+                        <a href="#" class="btn-demo">Live Demo 🚀</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3>News Analyzer Dashboard</h3>
+                    <p>End-to-end data engineering pipeline with NewsAPI ingestion, VADER sentiment analysis, SQLite storage, and Streamlit visualization.</p>
+                    <div class="pills">
+                        <span class="pill">Python</span>
+                        <span class="pill">Streamlit</span>
+                        <span class="pill">SQLite</span>
+                        <span class="pill">VADER</span>
+                        <span class="pill">NewsAPI</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/sreedhruthism/news-analyzer" target="_blank" class="btn-github">GitHub</a>
+                        <a href="#" class="btn-demo">Live Demo 🚀</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h3>AI Career Roadmap</h3>
+                    <p>Gen AI application generating custom career roadmaps for students based on their goals.</p>
+                    <div class="pills">
+                        <span class="pill">Gen AI</span>
+                        <span class="pill">Python</span>
+                        <span class="pill">LLMs</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/sreedhruthism/AI-Career-Roadmap" target="_blank" class="btn-github">GitHub</a>
+                        <a href="#" class="btn-demo">Live Demo 🚀</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <h3>Plant Disease Detection</h3>
+                    <p>ResNet-based CNN model using Grad-CAM explainability, improving accuracy by 18%. Deployed as a web application.</p>
+                    <div class="pills">
+                        <span class="pill">Deep Learning</span>
+                        <span class="pill">CNN</span>
+                        <span class="pill">ResNet</span>
+                        <span class="pill">Flask</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/sreedhruthism/Plant-Disease-Detection" target="_blank" class="btn-github">GitHub</a>
+                        <a href="#" class="btn-demo">Live Demo 🚀</a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <h3>Shopify Insights Fetcher</h3>
+                    <p>A tool to automatically fetch and analyze data insights from the Shopify platform using robust API integration.</p>
+                    <div class="pills">
+                        <span class="pill">Python</span>
+                        <span class="pill">API Integration</span>
+                        <span class="pill">Data Extraction</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/sreedhruthism/shopify_insights_fetcher" target="_blank" class="btn-github">GitHub</a>
+                        <a href="#" class="btn-demo">Live Demo 🚀</a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <h3>Online Banking System</h3>
+                    <p>A comprehensive simulated online banking ecosystem capable of managing user transactions securely.</p>
+                    <div class="pills">
+                        <span class="pill">Backend</span>
+                        <span class="pill">Database Mgmt</span>
+                        <span class="pill">Security</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://github.com/sreedhruthism/online-banking-system" target="_blank" class="btn-github">GitHub</a>
+                        <a href="#" class="btn-demo">Live Demo 🚀</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="section fade-up">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="exp-card">
+                    <h4>Enhancing Crop Productivity with AI</h4>
+                    <span class="company">IEEE ICANCS 2025</span>
+                    <p>Presented research paper on AI-based plant anomaly detection. Received Certificate of Appreciation.</p>
+                </div>
+                <div class="exp-card">
+                    <h4>IBM Certifications</h4>
+                    <span class="company">IBM SkillsBuild</span>
+                    <p>Machine Learning, Cloud Computing Fundamentals.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-area fade-up">
+            <h2 class="section-title text-center">Get In Touch</h2>
+            <div class="contact-box">
+                <a href="mailto:sreedhruthism@gmail.com" class="btn-demo massive-btn">Send Message 🚀</a>
+                <div class="social-links-btm">
+                    <a href="https://github.com/sreedhruthism" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/sree-dhruthi-mulakaledu-02aaa4250/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="site-footer">
+            <p>&copy; 2024 Sree Dhruthi Mulakaledu</p>
+        </footer>
+    </main>
+
+    <!-- Third party particles library equivalent implemented purely in script.js for asteroids -->
+    <script src="script.js"></script>
+</body>
+</html>
