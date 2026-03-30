@@ -289,8 +289,8 @@ a {
 .card-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
 .btn-github { background: #1f2937; color: #fff; padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 500; font-size: 0.9rem; }
 .btn-github:hover { background: #374151; }
-.btn-demo { background: var(--grad-button); color: #fff; padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 600; font-size: 0.9rem; box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3); }
-.btn-demo:hover { filter: brightness(1.1); box-shadow: 0 4px 20px rgba(139, 92, 246, 0.5); }
+.btn-demo { background: transparent; color: #d8b4fe; border: 1px solid #c084fc; padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 500; font-size: 0.9rem; transition: all 0.3s ease; }
+.btn-demo:hover { background: rgba(192, 132, 252, 0.1); box-shadow: 0 0 15px rgba(192, 132, 252, 0.2); }
 
 /* Contact */
 .contact-area { padding: 8rem 0; text-align: center; }
