@@ -25,7 +25,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px;
+    font-size: 14px; /* Scaled down base font to "zoom out" all rem-based typography gracefully */
     background-color: var(--bg-color);
 }
 
@@ -257,7 +257,7 @@ a {
 }
 
 .section {
-    padding: 6rem 0;
+    padding: 4.5rem 0; /* Compacted spacing for zoomed out feel */
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -287,8 +287,6 @@ a {
 
 /* Buttons */
 .card-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
-.btn-github { background: #1f2937; color: #fff; padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 500; font-size: 0.9rem; }
-.btn-github:hover { background: #374151; }
 .btn-demo { background: transparent; color: #d8b4fe; border: 1px solid #c084fc; padding: 0.6rem 1.2rem; border-radius: 6px; font-weight: 500; font-size: 0.9rem; transition: all 0.3s ease; }
 .btn-demo:hover { background: rgba(192, 132, 252, 0.1); box-shadow: 0 0 15px rgba(192, 132, 252, 0.2); }
 
